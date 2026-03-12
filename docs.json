@@ -49,11 +49,96 @@
       },
       {
         "tab": "API reference",
+        "openapi": "/openapi.json",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "简介",
             "pages": [
               "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "顾客管理",
+            "pages": [
+              "POST /customer/add",
+              "GET /customer/get",
+              "GET /customer/getDigitalImg",
+              "POST /customer/page",
+              "POST /customer/update",
+              "POST /customer/delete"
+            ]
+          },
+          {
+            "group": "数字形象与服装",
+            "pages": [
+              "POST /models/default",
+              "POST /models/edit",
+              "POST /models/outfit",
+              "POST /outfit/generateOutfitImg",
+              "POST /outfit/getOutfitImg",
+              "GET /outfit/getTaskStatus/{task_id}",
+              "POST /outfit/taskPage"
+            ]
+          },
+          {
+            "group": "匹配管理",
+            "pages": [
+              "POST /matching/addOrUpdate",
+              "POST /matching/list",
+              "POST /matching/delete",
+              "POST /matching/tag/addOrUpdate",
+              "POST /matching/tag/list",
+              "POST /matching/tag/delete"
+            ]
+          },
+          {
+            "group": "主数据管理",
+            "pages": [
+              "POST /md/product/add",
+              "POST /md/product/update",
+              "POST /md/product/delete",
+              "POST /md/product/updateDisplayFlag",
+              "POST /md/product/page",
+              "POST /md/productColor/add",
+              "POST /md/productColor/delete",
+              "POST /md/tag/add",
+              "POST /md/tag/update",
+              "POST /md/tag/delete",
+              "GET /md/tag/list",
+              "POST /md/tag/updateOrders"
+            ]
+          },
+          {
+            "group": "管理功能",
+            "pages": [
+              "GET /admin/points/{user_id}",
+              "POST /admin/points/{user_id}/recharge",
+              "GET /admin/points/{user_id}/ledger",
+              "GET /admin/channels",
+              "GET /admin/channels/{provider_code}",
+              "PUT /admin/channels/{provider_code}",
+              "POST /admin/channels/{provider_code}/check",
+              "GET /admin/routing/providers/{task_type}",
+              "PUT /admin/routing/providers/{task_type}",
+              "GET /admin/routing/models/{provider}/{task_type}",
+              "PUT /admin/routing/models/{provider}/{task_type}"
+            ]
+          },
+          {
+            "group": "文件管理",
+            "pages": [
+              "POST /oss/file/upload",
+              "POST /oss/file/batchUpload",
+              "GET /oss/file/download/{file_id}",
+              "GET /oss/file/checkConnection"
+            ]
+          },
+          {
+            "group": "系统",
+            "pages": [
+              "GET /health",
+              "GET /meta/runtime-config",
+              "GET /tasks/{task_id}"
             ]
           }
         ]
