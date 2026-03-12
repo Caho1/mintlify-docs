@@ -111,6 +111,10 @@
     }
   },
   "api": {
-    "openapi": "/openapi.json"
-  }
+    "openapi": "/openapi.json",
+    "playground": {
+      "mode": "show"
+    }
+  },
+  "openapi": "/openapi.json"
 }

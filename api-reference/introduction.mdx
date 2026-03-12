@@ -1,28 +1,15 @@
 ---
 title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+description: 'SuitMe API 接口文档'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+## 欢迎使用 SuitMe API
 
-## Welcome
+SuitMe 提供了一套完整的 API 接口，用于数字形象管理、顾客管理和服装搭配等功能。
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+## 认证方式
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
-
-## Authentication
-
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+所有 API 端点都使用 Bearer Token 进行身份验证。
 
 ```json
 "security": [
@@ -31,3 +18,10 @@ All API endpoints are authenticated using Bearer tokens and picked up from the s
   }
 ]
 ```
+
+## 主要功能
+
+- **数字形象管理**：创建和编辑数字形象
+- **顾客管理**：顾客信息的增删改查
+- **服装搭配**：智能服装搭配推荐
+- **任务管理**：异步任务状态查询
